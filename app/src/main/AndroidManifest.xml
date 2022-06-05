@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.varshith.whatsappsaver">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:requestLegacyExternalStorage="true"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <application android:theme="@style/Theme.AppCompat.Light" android:supportsRtl="true" android:roundIcon="@mipmap/ic_launcher_round" android:requestLegacyExternalStorage="true" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:allowBackup="true">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3403539919880614~4172326879"/>
+    <activity android:name="com.varshi.whatsappsaver.VideoViewActivity"
+        android:screenOrientation="portrait"/>
+
+    <activity android:name="com.varshi.whatsappsaver.ImageViewActivity" android:screenOrientation="portrait"/>
+
+
+    <activity android:name="com.varshi.whatsappsaver.SplashActivity" android:exported="true" android:screenOrientation="portrait">
+
+
+    <intent-filter>
+
+    <action android:name="android.intent.action.MAIN"/>
+
+    <category android:name="android.intent.category.LAUNCHER"/>
+
+</intent-filter>
+
+</activity>
+
+    <activity android:name="com.varshi.whatsappsaver.MainActivity" android:screenOrientation="portrait"/>
+
+
+    <provider android:name="androidx.core.content.FileProvider" android:exported="false" tools:replace="android:authorities" android:grantUriPermissions="true" android:authorities="com.android.whatsappsaver.provider">
+
+    <meta-data android:name="android.support.FILE_PROVIDER_PATHS" tools:replace="android:resource" android:resource="@xml/providers"/>
+
+</provider>
+
+</application>
+
+</manifest>
