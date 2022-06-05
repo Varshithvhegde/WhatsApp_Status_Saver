@@ -1,6 +1,10 @@
 # WhatsApp_Status_Saver
 You can easily save friends and family's status to your device with a single tap 
 
+# Download APK
+[Click here](https://github.com/Varshithvhegde/WhatsApp_Status_Saver/tree/master/release) to download APK File.
+
+
 ## Screenshots
 
 
